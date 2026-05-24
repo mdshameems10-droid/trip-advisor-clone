@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip advisor</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <!-- MENU BUTTON -->
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- NAVBAR -->
+
+        <nav id="navbar">
+            <h2 class="name">Trip Advisor</h2>
+
+            <button class="plan-btn">
+                ✨ Plan with AI
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+
+            <div class="right-nav">
+                <a href="#" class="currency">🌐 INR</a>
+
+                <button class="signin-btn">
+                    Sign in
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="search-container">
+
+    <h1 class="search-title">Where to?</h1>
+
+    <!-- TABS -->
+
+    <div class="search-tabs">
+
+        <button class="tab-item active">
+            🔍 Search All
+        </button>
+
+        <button class="tab-item">
+            🎯 Things to Do
+        </button>
+
+        <button class="tab-item">
+            🏨 Hotels
+        </button>
+
+        <button class="tab-item">
+            🍽 Restaurants
+        </button>
+
+        <button class="tab-item">
+            ✈ Flights
+        </button>
+
+    </div>
+
+    <!-- SEARCH BAR -->
+
+    <div class="search-wrapper">
+
+        <svg class="search-icon" fill="none" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 20L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+
+        <input 
+            type="text"
+            class="search-input"
+            placeholder="Places to go, hotels, restaurants..."
+        >
+
+        <button class="search-btn">
+            Search
+        </button>
+
+    </div>
+
+</div>
+
+<div class="banner-container">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="banner-content">
+
+        <h1 class="banner-title">
+            Book the best with the badge
+        </h1>
+
+        <p class="banner-description">
+            The 2026 Travelers’ Choice Best of the Best Things to Do are in,
+            all backed by travelers from around the world.
+        </p>
+
+        <button class="banner-btn">
+            See the winners
+        </button>
+
+    </div>
+
+    <!-- RIGHT BADGE -->
+
+    <div class="badge-container">
+
+        <div class="laurel left">
+            ❮
+        </div>
+
+        <div class="badge">
+
+            <div class="badge-top"></div>
+
+            <div class="badge-content">
+
+                <div class="badge-logo">
+                    🦉
+                </div>
+
+                <div class="badge-year">
+                    2026
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="laurel right">
+            ❯
+        </div>
+
+    </div>
+
+</div>
+
+<div class="interest-section">
+
+    <!-- HEADER -->
+
+    <div class="section-header">
+
+        <h2 class="section-title">
+            Find things to do by interest
+        </h2>
+
+        <p class="section-subtitle">
+            Whatever you're into, we've got it
+        </p>
+
+    </div>
+
+    <!-- GRID -->
+
+    <div class="cards-grid">
+
+        <!-- OUTDOORS -->
+
+        <div class="category-card">
+
+            <img 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+                class="card-background"
+                alt="Outdoors"
+            >
+
+            <div class="card-tag">
+                Adventure
+            </div>
+
+            <div class="card-overlay">
+
+                <div class="card-label">
+                    Outdoors
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOD -->
+
+        <div class="category-card">
+
+            <img 
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+                class="card-background"
+                alt="Food"
+            >
+
+            <div class="card-tag">
+                Popular
+            </div>
+
+            <div class="card-overlay">
+
+                <div class="card-label">
+                    Food
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CULTURE -->
+
+        <div class="category-card">
+
+            <img 
+                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop"
+                class="card-background"
+                alt="Culture"
+            >
+
+            <div class="card-tag">
+                History
+            </div>
+
+            <div class="card-overlay">
+
+                <div class="card-label">
+                    Culture
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- WATER -->
+
+        <div class="category-card">
+
+            <img 
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+                class="card-background"
+                alt="Water"
+            >
+
+            <div class="card-tag">
+                Relax
+            </div>
+
+            <div class="card-overlay">
+
+                <div class="card-label">
+                    Water
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- DIVIDER -->
+
+    <div class="divider"></div>
+
+</div>
+
+<div class="experiences-section">
+
+    <!-- HEADER -->
+
+    <div class="section-header">
+
+        <h2 class="section-title">
+            Explore experiences near Pondicherry
+        </h2>
+
+        <p class="section-subtitle">
+            Can't-miss picks near you
+        </p>
+
+    </div>
+
+    <!-- CAROUSEL -->
+
+    <div class="carousel-container">
+
+        <div class="cards-carousel" id="carousel">
+
+            <!-- CARD 1 -->
+
+            <div class="experience-card">
+
+                <div class="card-image-wrapper">
+
+                    <img 
+                        src="https://images.unsplash.com/photo-1488747279002-c8523379faaa?q=80&w=1200&auto=format&fit=crop"
+                        class="card-image"
+                    >
+
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3 class="card-title">
+                    Pondicherry Heritage Walking Tour of French Quarters
+                </h3>
+
+                <div class="card-rating">
+
+                    <span class="rating-score">5.0</span>
+
+                    <div class="rating-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <span class="review-count">(24)</span>
+
+                </div>
+
+                <div class="card-price">
+                    from <span class="price">₹2,549</span> per adult
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="experience-card">
+
+                <div class="card-image-wrapper">
+
+                    <img 
+                        src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+                        class="card-image"
+                    >
+
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3 class="card-title">
+                    Mahabalipuram & Pondicherry Day Trip with Lunch
+                </h3>
+
+                <div class="card-rating">
+
+                    <span class="rating-score">4.8</span>
+
+                    <div class="rating-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <span class="review-count">(18)</span>
+
+                </div>
+
+                <div class="card-price">
+                    from <span class="price">₹18,531</span> per adult
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="experience-card">
+
+                <div class="card-image-wrapper">
+
+                    <img 
+                        src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+                        class="card-image"
+                    >
+
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3 class="card-title">
+                    Traditional Kolam Art Class in Pondicherry
+                </h3>
+
+                <div class="card-rating">
+
+                    <span class="rating-score">4.9</span>
+
+                    <div class="rating-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <span class="review-count">(27)</span>
+
+                </div>
+
+                <div class="card-price">
+                    from <span class="price">₹943</span> per adult
+                </div>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="experience-card">
+
+                <div class="card-image-wrapper">
+
+                    <img 
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+                        class="card-image"
+                    >
+
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3 class="card-title">
+                    Pichavaram Mangrove & Temple Tour from Pondicherry
+                </h3>
+
+                <div class="card-rating">
+
+                    <span class="rating-score">5.0</span>
+
+                    <div class="rating-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <span class="review-count">(11)</span>
+
+                </div>
+
+                <div class="card-price">
+                    from <span class="price">₹24,610</span> per adult
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NAV BUTTONS -->
+
+        <button class="nav-button prev" onclick="scrollCarousel(-1)">
+            ❮
+        </button>
+
+        <button class="nav-button next" onclick="scrollCarousel(1)">
+            ❯
+        </button>
+
+    </div>
+
+    <!-- DIVIDER -->
+
+    <div class="divider"></div>
+
+</div>
+
+<div class="donation-section">
+
+    <!-- IMAGE -->
+
+    <div class="image-container">
+
+        <img 
+            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1400&auto=format&fit=crop"
+            alt="Small business owner"
+            class="donation-image"
+        >
+
+        <div class="kiva-logo">
+            kiva
+        </div>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content-container">
+
+        <div class="foundation-header">
+
+            🌍 Tripadvisor Foundation
+
+        </div>
+
+        <h2 class="donation-title">
+            Show some love to small businesses
+        </h2>
+
+        <p class="donation-description">
+            Donate to Kiva.org today to help local entrepreneurs grow their businesses.
+            The Tripadvisor Foundation will collectively match donations up to
+            $150,000 USD. Terms apply.
+        </p>
+
+        <button class="donate-btn">
+            Donate now
+        </button>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- FOOTER TOP -->
+
+        <div class="footer-columns">
+
+            <!-- COLUMN 1 -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    About Tripadvisor
+                </h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Press</a>
+                <a href="#">Resources and Policies</a>
+                <a href="#">Careers</a>
+                <a href="#">Trust & Safety</a>
+                <a href="#">Contact us</a>
+                <a href="#">Technology Blog</a>
+
+            </div>
+
+            <!-- COLUMN 2 -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Explore
+                </h3>
+
+                <a href="#">Write a review</a>
+                <a href="#">Add a Place</a>
+                <a href="#">Join</a>
+                <a href="#">Travellers' Choice</a>
+                <a href="#">Help Centre</a>
+                <a href="#">Travel Stories</a>
+
+            </div>
+
+            <!-- COLUMN 3 -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Do Business With Us
+                </h3>
+
+                <a href="#">Owners & DMO/CVB</a>
+                <a href="#">Business Advantage</a>
+                <a href="#">Sponsored Placements</a>
+                <a href="#">Advertise with Us</a>
+                <a href="#">Access our Content API</a>
+
+                <h3 class="footer-title app-title">
+                    Get The App
+                </h3>
+
+                <a href="#">iPhone App</a>
+                <a href="#">Android App</a>
+
+            </div>
+
+            <!-- COLUMN 4 -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Tripadvisor Sites
+                </h3>
+
+                <a href="#">
+                    Book tours and attraction tickets on Viator
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- DIVIDER -->
+
+        <div class="footer-divider"></div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <div class="footer-left">
+
+                <div class="footer-logo">
+
+                    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18"
+                            fill="none"
+                            stroke="#003e36"
+                            stroke-width="2"/>
+
+                        <circle cx="13" cy="15" r="2"
+                            fill="#003e36"/>
+
+                        <circle cx="27" cy="15" r="2"
+                            fill="#003e36"/>
+
+                        <path d="M13 28c4-3 10-3 14 0"
+                            fill="none"
+                            stroke="#003e36"
+                            stroke-width="2"
+                            stroke-linecap="round"/>
+                    </svg>
+
+                </div>
+
+                <p class="copyright">
+                    © 2026 Tripadvisor LLC All rights reserved.
+                </p>
+
+            </div>
+
+            <!-- DROPDOWNS -->
+
+            <div class="footer-controls">
+
+                <select>
+                    <option>₹ INR</option>
+                    <option>$ USD</option>
+                    <option>€ EUR</option>
+                    <option>£ GBP</option>
+                </select>
+
+                <select>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- LEGAL LINKS -->
+
+        <div class="footer-links">
+
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Consent</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <!-- INFO -->
+
+        <p class="footer-description">
+
+            This is the version of our website addressed to speakers of
+            English in India. If you are a resident of another country
+            or region, please select the appropriate version for your
+            location.
+
+        </p>
+
+        <!-- SOCIAL -->
+
+        <div class="social-icons">
+
+            <a href="#">f</a>
+            <a href="#">𝕏</a>
+            <a href="#">📷</a>
+            <a href="#">▶</a>
+            <a href="#">♪</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
